@@ -86,14 +86,14 @@ func (c *Contact) CreateContactInfo(cit, civ string) (*contactinfo.ContactInfo, 
 // 	}
 // }
 
-func (c *Contact) UpdateContactInfo(contactname, cit, civ string) error {
-	contactUpdate, contactExist := FindContactInfo(c.MyContactInfo, contactname)
+func (c *Contact) UpdateContactInfo(contactname, cit, civ string) (*contactinfo.ContactInfo, error) {
+	contactUpdate, contactExist := FindContactInfo(c.MyContactInfo, cit)
 	if !contactExist {
-		return errors.New("contact do not exist")
+		return nil, errors.New("contact do not exist")
 	}
 	contactUpdate.UpdateContactInfo(cit, civ)
 	// fmt.Println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", c.MyContactInfo)
-	return nil
+	return contactUpdate, nil
 
 }
 
