@@ -22,6 +22,7 @@ type User struct {
 	Account          *Account.Account
 }
 
+// Creating a new user
 func NewUser(firstname, lastname string, initialBalance float64) *User {
 	user := User{
 		ID:             uuid.NewV4(),
@@ -35,8 +36,11 @@ func NewUser(firstname, lastname string, initialBalance float64) *User {
 	return &user
 }
 
+// Finding a user
 func FindUser(userSlice []User, usersname string) (*User, bool) {
+	// Looping through the slice
 	for i := 0; i < len(userSlice); i++ {
+		// Checking if the user exists and if it does returning it
 		if userSlice[i].Usersname == usersname {
 			return &userSlice[i], true
 		}
@@ -44,6 +48,7 @@ func FindUser(userSlice []User, usersname string) (*User, bool) {
 	return nil, false
 }
 
+// Creating a new admin
 func NewAdmin(firstName, lastName, usersname string) *User {
 	return &User{
 		ID:        uuid.NewV4(),
@@ -54,18 +59,23 @@ func NewAdmin(firstName, lastName, usersname string) *User {
 	}
 }
 
+// Creating a new account
 func (u *User) CreateNewAccount(bankname string, accountbalance float64) (*Account.Account, error) {
+	// Validations
 	if !u.IsAdmin {
 		return nil, errors.New("YOU ARE NOT AN ADMIN YOU CANT CREATE ACCOUNT")
 	}
-
+	// Creating the account
 	createAccount, _ := bank.CreateNewAccount(bankname, accountbalance, &u.PassBook)
 
 	return createAccount, nil
 }
 
+// Finding if an account exits
 func (u *User) FindAccount(bankname string) (*Account.Account, bool) {
+	// Looping through all the accounts
 	for i := 0; i < len(u.UsersCreatedByMe); i++ {
+		// Checking if the account exists and returning it if it does
 		if u.UsersCreatedByMe[i].Account.BankName == bankname {
 			return u.UsersCreatedByMe[i].Account, true
 		}
@@ -73,8 +83,11 @@ func (u *User) FindAccount(bankname string) (*Account.Account, bool) {
 	return nil, false
 }
 
+// Deleting an already existing user
 func (u *User) DeleteUser(firstname string) error {
+	// Looping through all the users
 	for i := 0; i < len(u.UsersCreatedByMe); i++ {
+		// Checking if the user exists and deleting it if it does
 		if u.UsersCreatedByMe[i].FirstName == firstname {
 			u.UsersCreatedByMe = append(u.UsersCreatedByMe[:i], u.UsersCreatedByMe[i+1:]...)
 			return nil
@@ -83,7 +96,9 @@ func (u *User) DeleteUser(firstname string) error {
 	return errors.New("no user found")
 }
 
+// Updating an already existing user
 func (u *User) UpdateUser(firstname string, UsersCreatedByMe []User) error {
+	// Finding the user
 	userToUpdate, userExist := FindUser(UsersCreatedByMe, firstname)
 	if !userExist {
 		return errors.New("user does not exist")
@@ -93,8 +108,11 @@ func (u *User) UpdateUser(firstname string, UsersCreatedByMe []User) error {
 	return nil
 }
 
+// Deleting an already exisiting account
 func (u *User) DeleteAccount(bankname string) (*Account.Account, error) {
+	// Looping through the slice
 	for i := 0; i < len(u.UsersCreatedByMe); i++ {
+		// Checking if the account exists and deleting it if it does
 		if u.UsersCreatedByMe[i].FirstName == bankname {
 			u.UsersCreatedByMe = append(u.UsersCreatedByMe[:i], u.UsersCreatedByMe[i+1:]...)
 			return u.AccountBalance, nil
@@ -104,7 +122,9 @@ func (u *User) DeleteAccount(bankname string) (*Account.Account, error) {
 	return nil, nil
 }
 
+// Updating an already existing account
 func (u *User) UpdateAccount(bankname string, UsersCreatedByMe []User) error {
+	// Finding the account
 	userToUpdate, userExist := FindUser(UsersCreatedByMe, bankname)
 	if !userExist {
 		return errors.New("user does not exist")
@@ -114,26 +134,35 @@ func (u *User) UpdateAccount(bankname string, UsersCreatedByMe []User) error {
 	return nil
 }
 
+// Depositiong money to the account
 func (u *User) DepositMoney(bankname string, amount float64) error {
+	// Validations
 	if !u.IsAdmin {
 		return errors.New("YOU ARE NOT AN ADMIN YOU CANT DEPOSIT MONEY")
 	}
+	// Depositing the money
 	u.AccountBalance.Deposit(amount)
 	return nil
 }
 
+// Withdrawing the money from the account
 func (u *User) WithdrawMoney(bankname string, amount float64) error {
+	// Validations
 	if !u.IsAdmin {
 		return errors.New("YOU ARE NOT AN ADMIN YOU CANT WITHDRAW MONEY")
 	}
+	// Withdrawing the money
 	u.AccountBalance.Withdraw(amount)
 	return nil
 }
 
+// Transferring money from one account to another
 func (u *User) TransferMoney(bankname string, amount float64) error {
+	// Validations
 	if !u.IsAdmin {
 		return errors.New("YOU ARE NOT AN ADMIN YOU CANT TRANSFER MONEY")
 	}
+	// Transferring the money
 	transfer := u.Account.TransferMoney(amount, u.Account)
 	if transfer == nil {
 		return errors.New("transfer failed")
@@ -141,11 +170,13 @@ func (u *User) TransferMoney(bankname string, amount float64) error {
 	return nil
 }
 
+// Getting the account balance
 func (u *User) GetAccountBalance(bankname string) (float64, error) {
+	// Validations
 	if !u.IsAdmin {
 		return 0, errors.New("YOU ARE NOT AN ADMIN YOU CANT GET ACCOUNT BALANCE")
 	}
-
+	// Getting the account balance
 	account, found := u.FindAccount(bankname)
 	if !found {
 		return 0, errors.New("account not found")
@@ -153,8 +184,11 @@ func (u *User) GetAccountBalance(bankname string) (float64, error) {
 	return account.GetBalance(), nil
 }
 
+// Getting the passbook
 func (u *User) GetPassBook() {
+	// Looping through the slice
 	for i := 0; i < len(u.PassBook); i++ {
+		// Printing the passbook
 		fmt.Println(u.PassBook[i])
 	}
 }
