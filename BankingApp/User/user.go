@@ -2,19 +2,19 @@ package user
 
 import (
 	"errors"
-	//"fmt"
+	"fmt"
 
 	uuid "github.com/satori/go.uuid"
 
 	"bankingapp/Account"
 	bank "bankingapp/Bank"
-
 )
 
 type User struct {
 	ID               uuid.UUID
 	FirstName        string
 	LastName         string
+	PassBook         []string
 	AccountBalance   *Account.Account
 	IsAdmin          bool
 	UsersCreatedByMe []*User
@@ -23,14 +23,16 @@ type User struct {
 }
 
 func NewUser(firstname, lastname string, initialBalance float64) *User {
-	return &User{
+	user := User{
 		ID:             uuid.NewV4(),
 		FirstName:      firstname,
 		LastName:       lastname,
 		AccountBalance: &Account.Account{AccountBalance: initialBalance},
 		IsAdmin:        true,
 		Account:        &Account.Account{},
+		PassBook:       []string{},
 	}
+	return &user
 }
 
 func FindUser(userSlice []User, usersname string) (*User, bool) {
@@ -52,12 +54,12 @@ func NewAdmin(firstName, lastName, usersname string) *User {
 	}
 }
 
-func (u *User) CreateNewAccount(bankname string, accountbalance float64, passbook string) (*Account.Account, error) {
+func (u *User) CreateNewAccount(bankname string, accountbalance float64) (*Account.Account, error) {
 	if !u.IsAdmin {
 		return nil, errors.New("YOU ARE NOT AN ADMIN YOU CANT CREATE ACCOUNT")
 	}
 
-	createAccount, _ := bank.CreateNewAccount(bankname, accountbalance, passbook)
+	createAccount, _ := bank.CreateNewAccount(bankname, accountbalance, &u.PassBook)
 
 	return createAccount, nil
 }
@@ -133,8 +135,8 @@ func (u *User) TransferMoney(bankname string, amount float64) error {
 		return errors.New("YOU ARE NOT AN ADMIN YOU CANT TRANSFER MONEY")
 	}
 	transfer := u.Account.TransferMoney(amount, u.Account)
-	if transfer != nil {
-		return transfer
+	if transfer == nil {
+		return errors.New("transfer failed")
 	}
 	return nil
 }
@@ -149,4 +151,10 @@ func (u *User) GetAccountBalance(bankname string) (float64, error) {
 		return 0, errors.New("account not found")
 	}
 	return account.GetBalance(), nil
+}
+
+func (u *User) GetPassBook() {
+	for i := 0; i < len(u.PassBook); i++ {
+		fmt.Println(u.PassBook[i])
+	}
 }

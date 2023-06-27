@@ -15,10 +15,7 @@ func main() {
 		}
 	}()
 	admin1 := admin.NewAdmin("SANJEEV")
-	fmt.Println(admin1)
 	user1, _ := admin1.CreateUser("Sanjeev", "Yadav")
-	fmt.Println(user1)
-	fmt.Println(admin1)
 
 	//admin1.DeleteCreatedUser("Sanjeev")
 
@@ -32,14 +29,12 @@ func main() {
 	// 	panic(err)
 	// }
 
-	account1, _ := user1.CreateNewAccount("SBI", 10000000, "sdfsf12")
-	fmt.Println(account1.AccountBalance)
+	account1, _ := user1.CreateNewAccount("SBI", 10000000)
 
 	err := admin1.UpdateCreatedUser("Sanjeev", "firstName", "SAHIL")
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(user1)
 
 	//admin1.UpdateCreatedBank("HDFC", "bankname", "SBI")
 
@@ -50,13 +45,12 @@ func main() {
 	//admin1.UpdateCreatedBank("SBI", "bankname", "HDFC")
 	//fmt.Println(admin1.BanksCreatedByMe[0])
 
-	balance := account1.AccountBalance
-	fmt.Println(balance)
-
-	account2, _ := user1.CreateNewAccount("SBI", 1000, "sdfcsxvz")
-
+	account2, err := user1.CreateNewAccount("SBI", 1000)
+	if err != nil {
+		fmt.Println("err: ", err)
+	}
 	account1.TransferMoney(10000, account2)
-	balance = account2.AccountBalance
-	fmt.Println(balance)
-
+	account2.TransferMoney(2000, account1)
+	account1.Withdraw(100)
+	user1.GetPassBook()
 }

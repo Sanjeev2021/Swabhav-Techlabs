@@ -36,12 +36,11 @@ func FindBank(bankSlice []Bank, bankname string) (*Bank, bool) {
 	return nil, false
 }
 
-func CreateNewAccount(bankname string, accountbalance float64, passbook string) (*Account.Account, error) {
-	// if !IsAdmin {
-	// 	return nil, errors.New("YOU ARE ADMIN YOU CANT CREATE ACCOUNT")
-	// }
-
-	createAccount, _ := Account.NewAccount(bankname, accountbalance, passbook)
+func CreateNewAccount(bankname string, accountbalance float64, passBook *[]string) (*Account.Account, error) {
+	createAccount, err := Account.NewAccount(bankname, accountbalance, passBook)
+	if err != nil {
+		return nil, err
+	}
 	return createAccount, nil
 }
 
