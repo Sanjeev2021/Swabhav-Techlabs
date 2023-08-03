@@ -1,0 +1,480 @@
+
+2023-07-30 21:47:11 - Contact App App Route initializing
+2023-07-30 21:47:11 - Server Exposed On 4000
+2023-07-30 21:47:11 - ============RegisterModuleRoutes.go==============
+2023-07-30 21:47:11 - ==============================adminRegisterRoutes==========================
+2023-07-30 21:47:11 - ==============================userRegisterRoutes==========================
+2023-07-30 21:47:11 - Server Time: 2023-07-30 21:47:11.9760392 +0530 IST m=+0.019090101
+2023-07-30 21:47:11 - Server Running on port:4000 
+2023-07-30 21:47:12 - Test Module Configured.
+2023-07-30 21:47:12 - End of Migration
+2023-07-30 21:47:12 - Admin Module Configured.
+2023-07-30 21:47:12 - End of Migration
+2023-07-30 21:47:12 - Bank Module Configured.
+2023-07-30 21:47:12 - End of Migration
+2023-07-30 21:47:12 - Test Module Configured.
+2023-07-30 21:47:12 - End of Migration
+2023-07-30 22:42:58 - Db closed
+2023-07-30 22:42:58 - Listen and serve error: http: Server closed
+2023-07-30 22:42:58 - Server shutdown gracefully.
+2023-07-31 14:39:55 - Contact App App Route initializing
+2023-07-31 14:39:55 - Server Exposed On 4000
+2023-07-31 14:39:55 - ============RegisterModuleRoutes.go==============
+2023-07-31 14:39:55 - ==============================userRegisterRoutes==========================
+2023-07-31 14:39:55 - ==============================adminRegisterRoutes==========================
+2023-07-31 14:39:55 - Server Time: 2023-07-31 14:39:55.9772692 +0530 IST m=+0.127050201
+2023-07-31 14:39:55 - Server Running on port:4000 
+2023-07-31 14:39:56 - Test Module Configured.
+2023-07-31 14:39:56 - End of Migration
+2023-07-31 14:39:56 - Admin Module Configured.
+2023-07-31 14:39:56 - End of Migration
+2023-07-31 14:39:56 - Bank Module Configured.
+2023-07-31 14:39:56 - End of Migration
+2023-07-31 14:39:56 - Test Module Configured.
+2023-07-31 14:39:56 - End of Migration
+2023-07-31 14:42:24 - Received Request: GET/api/v1/bankingapp/user/[::1]:53672localhost:4000
+2023-07-31 14:42:24 - Completed Request without any errors...
+2023-07-31 15:09:50 - Contact App App Route initializing
+2023-07-31 15:09:50 - Server Exposed On 4000
+2023-07-31 15:09:50 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:09:50 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:09:50 - ==============================userRegisterRoutes==========================
+2023-07-31 15:09:50 - Server Time: 2023-07-31 15:09:50.7478106 +0530 IST m=+0.062918601
+2023-07-31 15:09:50 - Server Running on port:4000 
+2023-07-31 15:09:50 - Listen and serve error: listen tcp 0.0.0.0:4000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2023-07-31 15:09:50 - Db closed
+2023-07-31 15:09:50 - Server shutdown gracefully.
+2023-07-31 15:09:50 - Db closed
+2023-07-31 15:10:48 - Contact App App Route initializing
+2023-07-31 15:10:48 - Server Exposed On 4000
+2023-07-31 15:10:48 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:10:48 - ==============================userRegisterRoutes==========================
+2023-07-31 15:10:48 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:10:48 - Server Time: 2023-07-31 15:10:48.6282352 +0530 IST m=+0.038337401
+2023-07-31 15:10:48 - Server Running on port:4000 
+2023-07-31 15:10:48 - Test Module Configured.
+2023-07-31 15:10:48 - End of Migration
+2023-07-31 15:10:48 - Admin Module Configured.
+2023-07-31 15:10:48 - End of Migration
+2023-07-31 15:10:49 - Bank Module Configured.
+2023-07-31 15:10:49 - End of Migration
+2023-07-31 15:10:50 - Auto Migration ==> %sError 1072: Key column 'user_refer' doesn't exist in table
+2023-07-31 15:10:50 - Test Module Configured.
+2023-07-31 15:10:50 - End of Migration
+2023-07-31 15:13:22 - Received Request: POST/api/v1/bankingapp/user/register[::1]:49928localhost:4000
+2023-07-31 15:13:22 - Completed Request without any errors...
+2023-07-31 15:15:22 - Received Request: GET/api/v1/bankingapp/user/[::1]:49976localhost:4000
+2023-07-31 15:15:22 - Completed Request without any errors...
+2023-07-31 15:16:08 - Received Request: PUT/api/v1/bankingapp/user/3[::1]:49976localhost:4000
+2023-07-31 15:16:08 - Completed Request without any errors...
+2023-07-31 15:16:28 - Received Request: DELETE/api/v1/bankingapp/user/3[::1]:49976localhost:4000
+2023-07-31 15:16:28 - ********************************DeleteTest call**************************************
+2023-07-31 15:16:28 - Completed Request without any errors...
+2023-07-31 15:18:21 - Received Request: POST/api/v1/bankingapp/admin/register[::1]:50168localhost:4000
+2023-07-31 15:18:21 - Completed Request without any errors...
+2023-07-31 15:18:45 - Received Request: POST/api/v1/bankingapp/admin/register[::1]:50168localhost:4000
+2023-07-31 15:18:45 - Completed Request without any errors...
+2023-07-31 15:19:23 - Received Request: GET/api/v1/bankingapp/admin/[::1]:50168localhost:4000
+2023-07-31 15:19:23 - Completed Request without any errors...
+2023-07-31 15:19:43 - Db closed
+2023-07-31 15:19:43 - Listen and serve error: http: Server closed
+2023-07-31 15:19:43 - Server shutdown gracefully.
+2023-07-31 15:19:43 - Db closed
+2023-07-31 15:19:43 - App stopped.
+2023-07-31 15:19:43 - Server shutdown gracefully.
+2023-07-31 15:19:50 - Contact App App Route initializing
+2023-07-31 15:19:50 - Server Exposed On 4000
+2023-07-31 15:19:50 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:19:50 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:19:50 - ==============================userRegisterRoutes==========================
+2023-07-31 15:19:50 - Server Time: 2023-07-31 15:19:50.2505917 +0530 IST m=+0.026160801
+2023-07-31 15:19:50 - Server Running on port:4000 
+2023-07-31 15:19:50 - Test Module Configured.
+2023-07-31 15:19:50 - End of Migration
+2023-07-31 15:19:50 - Admin Module Configured.
+2023-07-31 15:19:50 - End of Migration
+2023-07-31 15:19:50 - Bank Module Configured.
+2023-07-31 15:19:50 - End of Migration
+2023-07-31 15:19:50 - Auto Migration ==> %sError 1072: Key column 'user_refer' doesn't exist in table
+2023-07-31 15:19:50 - Test Module Configured.
+2023-07-31 15:19:50 - End of Migration
+2023-07-31 15:20:12 - Received Request: GET/api/v1/bankingapp/admin/2[::1]:55035localhost:4000
+2023-07-31 15:20:12 - Completed Request without any errors...
+2023-07-31 15:20:17 - Received Request: GET/api/v1/bankingapp/admin/2[::1]:55035localhost:4000
+2023-07-31 15:20:17 - Completed Request without any errors...
+2023-07-31 15:20:24 - Received Request: GET/api/v1/bankingapp/admin/1[::1]:55035localhost:4000
+2023-07-31 15:20:24 - Completed Request without any errors...
+2023-07-31 15:20:35 - Db closed
+2023-07-31 15:20:35 - Listen and serve error: http: Server closed
+2023-07-31 15:20:35 - Server shutdown gracefully.
+2023-07-31 15:20:35 - App stopped.
+2023-07-31 15:20:39 - Contact App App Route initializing
+2023-07-31 15:20:39 - Server Exposed On 4000
+2023-07-31 15:20:39 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:20:39 - ==============================userRegisterRoutes==========================
+2023-07-31 15:20:39 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:20:39 - Server Time: 2023-07-31 15:20:39.4800616 +0530 IST m=+0.016630201
+2023-07-31 15:20:39 - Server Running on port:4000 
+2023-07-31 15:20:39 - Test Module Configured.
+2023-07-31 15:20:39 - End of Migration
+2023-07-31 15:20:39 - Admin Module Configured.
+2023-07-31 15:20:39 - End of Migration
+2023-07-31 15:20:39 - Bank Module Configured.
+2023-07-31 15:20:39 - End of Migration
+2023-07-31 15:20:39 - Auto Migration ==> %sError 1072: Key column 'user_refer' doesn't exist in table
+2023-07-31 15:20:39 - Test Module Configured.
+2023-07-31 15:20:39 - End of Migration
+2023-07-31 15:20:59 - Received Request: GET/api/v1/bankingapp/admin/2[::1]:55055localhost:4000
+2023-07-31 15:20:59 - Completed Request without any errors...
+2023-07-31 15:21:39 - Db closed
+2023-07-31 15:21:39 - Listen and serve error: http: Server closed
+2023-07-31 15:21:39 - Server shutdown gracefully.
+2023-07-31 15:21:39 - Db closed
+2023-07-31 15:21:39 - App stopped.
+2023-07-31 15:21:44 - Contact App App Route initializing
+2023-07-31 15:21:44 - Server Exposed On 4000
+2023-07-31 15:21:44 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:21:44 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:21:44 - ==============================userRegisterRoutes==========================
+2023-07-31 15:21:44 - Server Time: 2023-07-31 15:21:44.8997868 +0530 IST m=+0.016579901
+2023-07-31 15:21:44 - Server Running on port:4000 
+2023-07-31 15:21:44 - Test Module Configured.
+2023-07-31 15:21:44 - End of Migration
+2023-07-31 15:21:45 - Admin Module Configured.
+2023-07-31 15:21:45 - End of Migration
+2023-07-31 15:21:45 - Bank Module Configured.
+2023-07-31 15:21:45 - End of Migration
+2023-07-31 15:21:45 - Auto Migration ==> %sError 1072: Key column 'user_refer' doesn't exist in table
+2023-07-31 15:21:45 - Test Module Configured.
+2023-07-31 15:21:45 - End of Migration
+2023-07-31 15:22:13 - Received Request: PUT/api/v1/bankingapp/admin/2[::1]:55087localhost:4000
+2023-07-31 15:22:13 - Completed Request without any errors...
+2023-07-31 15:22:59 - Received Request: PUT/api/v1/bankingapp/admin/2[::1]:55087localhost:4000
+2023-07-31 15:22:59 - Completed Request without any errors...
+2023-07-31 15:27:04 - Received Request: POST/api/v1/bankingapp/bank/create[::1]:55323localhost:4000
+2023-07-31 15:27:04 - Completed Request without any errors...
+2023-07-31 15:29:01 - Received Request: GET/api/v1/bankingapp/bank/[::1]:55377localhost:4000
+2023-07-31 15:29:01 - Completed Request without any errors...
+2023-07-31 15:29:28 - Received Request: PUT/api/v1/bankingapp/bank/1[::1]:55377localhost:4000
+2023-07-31 15:29:28 - Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bankingappnew`.`banks`, CONSTRAINT `banks_admin_refer_users_id_foreign` FOREIGN KEY (`admin_refer`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2023-07-31 15:29:28 - Completed Request without any errors...
+2023-07-31 15:32:08 - Db closed
+2023-07-31 15:32:08 - Listen and serve error: http: Server closed
+2023-07-31 15:32:08 - Db closed
+2023-07-31 15:32:08 - Server shutdown gracefully.
+2023-07-31 15:32:08 - Server shutdown gracefully.
+2023-07-31 15:32:09 - App stopped.
+2023-07-31 15:32:21 - Contact App App Route initializing
+2023-07-31 15:32:21 - Server Exposed On 4000
+2023-07-31 15:32:21 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:32:21 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:32:21 - ==============================userRegisterRoutes==========================
+2023-07-31 15:32:21 - Server Time: 2023-07-31 15:32:21.1218417 +0530 IST m=+0.024248501
+2023-07-31 15:32:21 - Server Running on port:4000 
+2023-07-31 15:32:21 - Test Module Configured.
+2023-07-31 15:32:21 - End of Migration
+2023-07-31 15:32:21 - Admin Module Configured.
+2023-07-31 15:32:21 - End of Migration
+2023-07-31 15:32:21 - Bank Module Configured.
+2023-07-31 15:32:21 - End of Migration
+2023-07-31 15:32:21 - Auto Migration ==> %sError 1072: Key column 'user_refer' doesn't exist in table
+2023-07-31 15:32:21 - Test Module Configured.
+2023-07-31 15:32:21 - End of Migration
+2023-07-31 15:32:52 - Received Request: DELETE/api/v1/bankingapp/bank/1[::1]:55445localhost:4000
+2023-07-31 15:32:52 - Completed Request without any errors...
+2023-07-31 15:33:42 - Received Request: POST/api/v1/bankingapp/bank/create[::1]:55445localhost:4000
+2023-07-31 15:33:42 - Completed Request without any errors...
+2023-07-31 15:34:10 - Received Request: GET/api/v1/bankingapp/bank/[::1]:55445localhost:4000
+2023-07-31 15:34:10 - Completed Request without any errors...
+2023-07-31 15:34:31 - Received Request: PUT/api/v1/bankingapp/bank/2[::1]:55445localhost:4000
+2023-07-31 15:34:31 - Error 1452: Cannot add or update a child row: a foreign key constraint fails (`bankingappnew`.`banks`, CONSTRAINT `banks_admin_refer_users_id_foreign` FOREIGN KEY (`admin_refer`) REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+2023-07-31 15:34:31 - Completed Request without any errors...
+2023-07-31 15:36:22 - Received Request: PUT/api/v1/bankingapp/bank/2[::1]:55505localhost:4000
+2023-07-31 15:36:22 - Completed Request without any errors...
+2023-07-31 15:38:08 - Db closed
+2023-07-31 15:38:08 - Listen and serve error: http: Server closed
+2023-07-31 15:38:08 - Db closed
+2023-07-31 15:38:08 - Server shutdown gracefully.
+2023-07-31 15:38:08 - Server shutdown gracefully.
+2023-07-31 15:38:08 - App stopped.
+2023-07-31 15:38:19 - Contact App App Route initializing
+2023-07-31 15:38:19 - Server Exposed On 4000
+2023-07-31 15:38:19 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:38:19 - ==============================userRegisterRoutes==========================
+2023-07-31 15:38:19 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:38:19 - Server Time: 2023-07-31 15:38:19.1065277 +0530 IST m=+0.029235501
+2023-07-31 15:38:19 - Server Running on port:4000 
+2023-07-31 15:38:19 - Test Module Configured.
+2023-07-31 15:38:19 - End of Migration
+2023-07-31 15:38:19 - Admin Module Configured.
+2023-07-31 15:38:19 - End of Migration
+2023-07-31 15:38:19 - Bank Module Configured.
+2023-07-31 15:38:19 - End of Migration
+2023-07-31 15:38:19 - Test Module Configured.
+2023-07-31 15:38:19 - End of Migration
+2023-07-31 15:42:49 - Received Request: POST/api/v1/bankingapp/account/register[::1]:55594localhost:4000
+2023-07-31 15:42:49 - json: cannot unmarshal string into Go struct field Account.Balance of type float64
+2023-07-31 15:42:49 - Completed Request without any errors...
+2023-07-31 15:45:31 - Db closed
+2023-07-31 15:45:31 - Listen and serve error: http: Server closed
+2023-07-31 15:45:31 - Server shutdown gracefully.
+2023-07-31 15:45:31 - Db closed
+2023-07-31 15:45:31 - App stopped.
+2023-07-31 15:45:38 - Contact App App Route initializing
+2023-07-31 15:45:38 - Server Exposed On 4000
+2023-07-31 15:45:38 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:45:38 - ==============================userRegisterRoutes==========================
+2023-07-31 15:45:38 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:45:38 - Server Time: 2023-07-31 15:45:38.8975084 +0530 IST m=+0.022769901
+2023-07-31 15:45:38 - Server Running on port:4000 
+2023-07-31 15:45:38 - Test Module Configured.
+2023-07-31 15:45:38 - End of Migration
+2023-07-31 15:45:39 - Admin Module Configured.
+2023-07-31 15:45:39 - End of Migration
+2023-07-31 15:45:39 - Bank Module Configured.
+2023-07-31 15:45:39 - End of Migration
+2023-07-31 15:45:39 - Test Module Configured.
+2023-07-31 15:45:39 - End of Migration
+2023-07-31 15:48:59 - Db closed
+2023-07-31 15:49:00 - Listen and serve error: http: Server closed
+2023-07-31 15:49:00 - Server shutdown gracefully.
+2023-07-31 15:49:00 - Db closed
+2023-07-31 15:49:00 - App stopped.
+2023-07-31 15:49:10 - Contact App App Route initializing
+2023-07-31 15:49:10 - Server Exposed On 4000
+2023-07-31 15:49:10 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:49:10 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:49:10 - ==============================userRegisterRoutes==========================
+2023-07-31 15:49:10 - Server Time: 2023-07-31 15:49:10.0844924 +0530 IST m=+0.020945401
+2023-07-31 15:49:10 - Server Running on port:4000 
+2023-07-31 15:49:10 - Test Module Configured.
+2023-07-31 15:49:10 - End of Migration
+2023-07-31 15:49:10 - Admin Module Configured.
+2023-07-31 15:49:10 - End of Migration
+2023-07-31 15:49:10 - Bank Module Configured.
+2023-07-31 15:49:10 - End of Migration
+2023-07-31 15:49:10 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 15:49:10 - Test Module Configured.
+2023-07-31 15:49:10 - End of Migration
+2023-07-31 15:50:15 - Db closed
+2023-07-31 15:50:15 - Listen and serve error: http: Server closed
+2023-07-31 15:50:15 - Server shutdown gracefully.
+2023-07-31 15:50:15 - Db closed
+2023-07-31 15:50:15 - Server shutdown gracefully.
+2023-07-31 15:50:15 - App stopped.
+2023-07-31 15:50:22 - Contact App App Route initializing
+2023-07-31 15:50:22 - Server Exposed On 4000
+2023-07-31 15:50:22 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:50:22 - ==============================userRegisterRoutes==========================
+2023-07-31 15:50:22 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:50:22 - Server Time: 2023-07-31 15:50:22.8601716 +0530 IST m=+0.021391201
+2023-07-31 15:50:22 - Server Running on port:4000 
+2023-07-31 15:50:22 - Test Module Configured.
+2023-07-31 15:50:22 - End of Migration
+2023-07-31 15:50:22 - Admin Module Configured.
+2023-07-31 15:50:23 - End of Migration
+2023-07-31 15:50:23 - Bank Module Configured.
+2023-07-31 15:50:23 - End of Migration
+2023-07-31 15:50:23 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 15:50:23 - Test Module Configured.
+2023-07-31 15:50:23 - End of Migration
+2023-07-31 15:51:09 - Received Request: POST/api/v1/bankingapp/account/register[::1]:55711localhost:4000
+2023-07-31 15:51:09 - json: cannot unmarshal string into Go struct field Account.Balance of type float64
+2023-07-31 15:51:09 - Completed Request without any errors...
+2023-07-31 15:51:29 - Db closed
+2023-07-31 15:51:29 - Listen and serve error: http: Server closed
+2023-07-31 15:51:29 - Db closed
+2023-07-31 15:51:29 - Server shutdown gracefully.
+2023-07-31 15:51:30 - Server shutdown gracefully.
+2023-07-31 15:51:30 - App stopped.
+2023-07-31 15:51:30 - App stopped.
+2023-07-31 15:51:38 - Contact App App Route initializing
+2023-07-31 15:51:38 - Server Exposed On 4000
+2023-07-31 15:51:38 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:51:38 - ==============================userRegisterRoutes==========================
+2023-07-31 15:51:38 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:51:38 - Server Time: 2023-07-31 15:51:38.6701532 +0530 IST m=+0.019338001
+2023-07-31 15:51:38 - Server Running on port:4000 
+2023-07-31 15:51:38 - Test Module Configured.
+2023-07-31 15:51:38 - End of Migration
+2023-07-31 15:51:38 - Admin Module Configured.
+2023-07-31 15:51:38 - End of Migration
+2023-07-31 15:51:38 - Bank Module Configured.
+2023-07-31 15:51:38 - End of Migration
+2023-07-31 15:51:38 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 15:51:38 - Test Module Configured.
+2023-07-31 15:51:38 - End of Migration
+2023-07-31 15:52:01 - Received Request: POST/api/v1/bankingapp/account/register[::1]:55730localhost:4000
+2023-07-31 15:52:01 - json: cannot unmarshal string into Go struct field Account.Balance of type float64
+2023-07-31 15:52:01 - Completed Request without any errors...
+2023-07-31 15:52:13 - Received Request: POST/api/v1/bankingapp/account/register[::1]:55730localhost:4000
+2023-07-31 15:52:13 - Completed Request without any errors...
+2023-07-31 15:52:59 - Received Request: POST/api/v1/bankingapp/account/register[::1]:55730localhost:4000
+2023-07-31 15:52:59 - Completed Request without any errors...
+2023-07-31 15:53:12 - Received Request: GET/api/v1/bankingapp/account/[::1]:55730localhost:4000
+2023-07-31 15:53:12 - Completed Request without any errors...
+2023-07-31 15:53:37 - Received Request: PUT/api/v1/bankingapp/account/2[::1]:55730localhost:4000
+2023-07-31 15:53:37 - Account does not exist
+2023-07-31 15:53:37 - Completed Request without any errors...
+2023-07-31 15:53:50 - Received Request: PUT/api/v1/bankingapp/account/2[::1]:55730localhost:4000
+2023-07-31 15:53:50 - invalid character '"' after object key:value pair
+2023-07-31 15:53:50 - Completed Request without any errors...
+2023-07-31 15:53:55 - Received Request: PUT/api/v1/bankingapp/account/2[::1]:55730localhost:4000
+2023-07-31 15:53:55 - Account does not exist
+2023-07-31 15:53:55 - Completed Request without any errors...
+2023-07-31 15:54:12 - Received Request: PUT/api/v1/bankingapp/account/1[::1]:55730localhost:4000
+2023-07-31 15:54:12 - Account does not exist
+2023-07-31 15:54:12 - Completed Request without any errors...
+2023-07-31 15:54:27 - Received Request: DELETE/api/v1/bankingapp/account/2[::1]:55730localhost:4000
+2023-07-31 15:54:27 - Account does not exist
+2023-07-31 15:54:27 - Completed Request without any errors...
+2023-07-31 15:55:14 - Db closed
+2023-07-31 15:55:14 - Listen and serve error: http: Server closed
+2023-07-31 15:55:14 - Db closed
+2023-07-31 15:55:14 - Server shutdown gracefully.
+2023-07-31 15:55:14 - Server shutdown gracefully.
+2023-07-31 15:55:14 - App stopped.
+2023-07-31 15:55:14 - App stopped.
+2023-07-31 15:55:20 - Contact App App Route initializing
+2023-07-31 15:55:20 - Server Exposed On 4000
+2023-07-31 15:55:20 - ============RegisterModuleRoutes.go==============
+2023-07-31 15:55:20 - ==============================userRegisterRoutes==========================
+2023-07-31 15:55:20 - ==============================adminRegisterRoutes==========================
+2023-07-31 15:55:20 - Server Time: 2023-07-31 15:55:20.2198946 +0530 IST m=+0.019383001
+2023-07-31 15:55:20 - Server Running on port:4000 
+2023-07-31 15:55:20 - Test Module Configured.
+2023-07-31 15:55:20 - End of Migration
+2023-07-31 15:55:20 - Admin Module Configured.
+2023-07-31 15:55:20 - End of Migration
+2023-07-31 15:55:20 - Bank Module Configured.
+2023-07-31 15:55:20 - End of Migration
+2023-07-31 15:55:20 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 15:55:20 - Test Module Configured.
+2023-07-31 15:55:20 - End of Migration
+2023-07-31 15:56:21 - Received Request: GET/api/v1/bankingapp/account/[::1]:55803localhost:4000
+2023-07-31 15:56:21 - Completed Request without any errors...
+2023-07-31 15:56:48 - Received Request: DELETE/api/v1/bankingapp/account/2[::1]:55803localhost:4000
+2023-07-31 15:56:48 - Account does not exist
+2023-07-31 15:56:48 - Completed Request without any errors...
+2023-07-31 15:57:12 - Received Request: DELETE/api/v1/bankingapp/account/1[::1]:55803localhost:4000
+2023-07-31 15:57:12 - Account does not exist
+2023-07-31 15:57:12 - Completed Request without any errors...
+2023-07-31 15:58:10 - Received Request: PUT/api/v1/bankingapp/account/1[::1]:55803localhost:4000
+2023-07-31 15:58:10 - Account does not exist
+2023-07-31 15:58:10 - Completed Request without any errors...
+2023-07-31 16:04:40 - Received Request: PUT/api/v1/bankingapp/account/2[::1]:55902localhost:4000
+2023-07-31 16:04:40 - Account does not exist
+2023-07-31 16:04:40 - Completed Request without any errors...
+2023-07-31 16:05:01 - Received Request: PUT/api/v1/bankingapp/account/2[::1]:55902localhost:4000
+2023-07-31 16:05:01 - Account does not exist
+2023-07-31 16:05:01 - Completed Request without any errors...
+2023-07-31 16:05:13 - Received Request: PUT/api/v1/bankingapp/account/2[::1]:55902localhost:4000
+2023-07-31 16:05:13 - Account does not exist
+2023-07-31 16:05:13 - Completed Request without any errors...
+2023-07-31 16:05:23 - Received Request: PUT/api/v1/bankingapp/account/2[::1]:55902localhost:4000
+2023-07-31 16:05:23 - Account does not exist
+2023-07-31 16:05:23 - Completed Request without any errors...
+2023-07-31 16:06:30 - Contact App App Route initializing
+2023-07-31 16:06:30 - Server Exposed On 4000
+2023-07-31 16:06:30 - ============RegisterModuleRoutes.go==============
+2023-07-31 16:06:30 - ==============================adminRegisterRoutes==========================
+2023-07-31 16:06:30 - ==============================userRegisterRoutes==========================
+2023-07-31 16:06:30 - Server Time: 2023-07-31 16:06:30.7099899 +0530 IST m=+0.018026401
+2023-07-31 16:06:30 - Server Running on port:4000 
+2023-07-31 16:06:30 - Test Module Configured.
+2023-07-31 16:06:30 - End of Migration
+2023-07-31 16:06:30 - Admin Module Configured.
+2023-07-31 16:06:30 - End of Migration
+2023-07-31 16:06:30 - Bank Module Configured.
+2023-07-31 16:06:30 - End of Migration
+2023-07-31 16:06:30 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 16:06:30 - Test Module Configured.
+2023-07-31 16:06:30 - End of Migration
+2023-07-31 16:06:40 - Received Request: PUT/api/v1/bankingapp/account/1[::1]:55948localhost:4000
+2023-07-31 16:06:40 - Account nhi hai 
+2023-07-31 16:06:40 - Completed Request without any errors...
+2023-07-31 16:08:47 - Contact App App Route initializing
+2023-07-31 16:08:47 - Server Exposed On 4000
+2023-07-31 16:08:47 - ============RegisterModuleRoutes.go==============
+2023-07-31 16:08:47 - ==============================userRegisterRoutes==========================
+2023-07-31 16:08:47 - ==============================adminRegisterRoutes==========================
+2023-07-31 16:08:47 - Server Time: 2023-07-31 16:08:47.5384065 +0530 IST m=+0.029291901
+2023-07-31 16:08:47 - Server Running on port:4000 
+2023-07-31 16:08:47 - Listen and serve error: listen tcp 0.0.0.0:4000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2023-07-31 16:08:47 - Db closed
+2023-07-31 16:08:47 - Server shutdown gracefully.
+2023-07-31 16:08:47 - Db closed
+2023-07-31 16:09:02 - Contact App App Route initializing
+2023-07-31 16:09:02 - Server Exposed On 4000
+2023-07-31 16:09:02 - ============RegisterModuleRoutes.go==============
+2023-07-31 16:09:02 - ==============================userRegisterRoutes==========================
+2023-07-31 16:09:02 - ==============================adminRegisterRoutes==========================
+2023-07-31 16:09:02 - Server Time: 2023-07-31 16:09:02.6181268 +0530 IST m=+0.028695601
+2023-07-31 16:09:02 - Server Running on port:4000 
+2023-07-31 16:09:02 - Test Module Configured.
+2023-07-31 16:09:02 - End of Migration
+2023-07-31 16:09:02 - Admin Module Configured.
+2023-07-31 16:09:02 - End of Migration
+2023-07-31 16:09:02 - Bank Module Configured.
+2023-07-31 16:09:02 - End of Migration
+2023-07-31 16:09:02 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 16:09:02 - Test Module Configured.
+2023-07-31 16:09:02 - End of Migration
+2023-07-31 16:09:11 - Received Request: PUT/api/v1/bankingapp/account/1[::1]:55971localhost:4000
+2023-07-31 16:09:11 - Account does not exist 
+2023-07-31 16:09:11 - Completed Request without any errors...
+2023-07-31 16:09:41 - Db closed
+2023-07-31 16:09:41 - Listen and serve error: http: Server closed
+2023-07-31 16:09:41 - Server shutdown gracefully.
+2023-07-31 16:09:41 - Db closed
+2023-07-31 16:09:41 - App stopped.
+2023-07-31 16:09:48 - Contact App App Route initializing
+2023-07-31 16:09:48 - Server Exposed On 4000
+2023-07-31 16:09:48 - ============RegisterModuleRoutes.go==============
+2023-07-31 16:09:48 - ==============================userRegisterRoutes==========================
+2023-07-31 16:09:48 - ==============================adminRegisterRoutes==========================
+2023-07-31 16:09:48 - Server Time: 2023-07-31 16:09:48.8345018 +0530 IST m=+0.020394601
+2023-07-31 16:09:48 - Server Running on port:4000 
+2023-07-31 16:09:48 - Test Module Configured.
+2023-07-31 16:09:48 - End of Migration
+2023-07-31 16:09:48 - Admin Module Configured.
+2023-07-31 16:09:48 - End of Migration
+2023-07-31 16:09:49 - Bank Module Configured.
+2023-07-31 16:09:49 - End of Migration
+2023-07-31 16:09:49 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 16:09:49 - Test Module Configured.
+2023-07-31 16:09:49 - End of Migration
+2023-07-31 16:09:58 - Received Request: PUT/api/v1/bankingapp/account/1[::1]:55989localhost:4000
+2023-07-31 16:09:58 - Completed Request without any errors...
+2023-07-31 16:10:23 - Received Request: DELETE/api/v1/bankingapp/account/2[::1]:55989localhost:4000
+2023-07-31 16:10:23 - Completed Request without any errors...
+2023-07-31 16:32:29 - Contact App App Route initializing
+2023-07-31 16:32:29 - Server Exposed On 4000
+2023-07-31 16:32:29 - ============RegisterModuleRoutes.go==============
+2023-07-31 16:32:29 - ==============================userRegisterRoutes==========================
+2023-07-31 16:32:29 - ==============================adminRegisterRoutes==========================
+2023-07-31 16:32:29 - Server Time: 2023-07-31 16:32:29.3801915 +0530 IST m=+0.355181601
+2023-07-31 16:32:29 - Server Running on port:4000 
+2023-07-31 16:32:29 - Listen and serve error: listen tcp 0.0.0.0:4000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+2023-07-31 16:32:29 - Db closed
+2023-07-31 16:32:29 - Server shutdown gracefully.
+2023-07-31 16:32:29 - Db closed
+2023-07-31 16:33:03 - Contact App App Route initializing
+2023-07-31 16:33:03 - Server Exposed On 4000
+2023-07-31 16:33:03 - ============RegisterModuleRoutes.go==============
+2023-07-31 16:33:03 - ==============================userRegisterRoutes==========================
+2023-07-31 16:33:03 - ==============================adminRegisterRoutes==========================
+2023-07-31 16:33:03 - Server Time: 2023-07-31 16:33:03.1476772 +0530 IST m=+0.023452901
+2023-07-31 16:33:03 - Server Running on port:4000 
+2023-07-31 16:33:03 - Test Module Configured.
+2023-07-31 16:33:03 - End of Migration
+2023-07-31 16:33:03 - Admin Module Configured.
+2023-07-31 16:33:03 - End of Migration
+2023-07-31 16:33:03 - Bank Module Configured.
+2023-07-31 16:33:03 - End of Migration
+2023-07-31 16:33:03 - Auto Migration ==> %sError 1072: Key column 'bank_refer' doesn't exist in table
+2023-07-31 16:33:03 - Test Module Configured.
+2023-07-31 16:33:03 - End of Migration
+2023-07-31 16:33:34 - Received Request: POST/api/v1/bankingapp/user/register[::1]:50584localhost:4000
+2023-07-31 16:33:34 - Completed Request without any errors...
+2023-07-31 16:44:45 - Db closed
